@@ -70,21 +70,39 @@ export function Work() {
 
   if (stacked) {
     return (
-      <section id="work" className="section">
-        <div ref={stackRef} className="shell">
-          <div data-reveal><Eyebrow>{work.kicker}</Eyebrow></div>
-          <h2 data-reveal className="t-h2 mt-4 max-w-[20ch]">{work.h2}</h2>
-          <p data-reveal className="t-lead mt-5 max-w-[40rem]">{work.sub}</p>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {work.ventures.map((v) => (<div data-reveal key={v.name}><VentureCard v={v} /></div>))}
+      <section id="work" className="section overflow-hidden">
+        <div ref={stackRef}>
+          <div className="shell">
+            <div data-reveal><Eyebrow>{work.kicker}</Eyebrow></div>
+            <h2 data-reveal className="t-h2 mt-4 max-w-[16ch]">{work.h2}</h2>
+            <p data-reveal className="t-lead mt-5 max-w-[40rem]">{work.sub}</p>
           </div>
+          {/* full-bleed swipe gallery — a gesture, not a stack of cards */}
+          <div
+            data-reveal
+            className="swipe mt-10 flex gap-4 overflow-x-auto px-[4vw] pb-2"
+          >
+            {work.ventures.map((v) => (
+              <div key={v.name} className="swipe-item w-[80vw] max-w-[330px] shrink-0">
+                <VentureCard v={v} />
+              </div>
+            ))}
+            <div className="swipe-item flex w-[60vw] shrink-0 items-center">
+              <p className="t-h3 max-w-[14ch] text-ink-faint">
+                The bar the embedded team works to.
+              </p>
+            </div>
+          </div>
+          <p className="shell mt-4 text-[0.8rem] font-700 uppercase tracking-[0.08em] text-ink-faint">
+            Swipe →
+          </p>
         </div>
       </section>
     )
   }
 
   return (
-    <section id="work" ref={section} className="relative bg-surface/40">
+    <section id="work" ref={section} className="relative">
       <div ref={pinned} className="flex h-screen flex-col justify-center overflow-hidden">
         <div className="shell flex items-end justify-between gap-6 pb-8">
           <div>
