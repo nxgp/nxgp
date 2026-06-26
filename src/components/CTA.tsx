@@ -55,7 +55,7 @@ export function CTA() {
                 {cta.ctaPrimary}
                 <ArrowRight className="size-4" />
               </Button>
-              <Button variant="ghost" className="text-white hover:bg-white/10" onClick={() => scrollToId('portfolio')}>
+              <Button variant="ghost" className="text-white hover:bg-white/10" onClick={() => scrollToId('services')}>
                 {cta.ctaSecondary}
               </Button>
             </div>

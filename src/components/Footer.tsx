@@ -12,7 +12,7 @@ export function Footer() {
                 <path d="M7 18.5V7.5h2.1l6 7.4V7.5h2.1v11h-2.1l-6-7.4v7.4H7Z" fill="#fff" />
                 <circle cx="19" cy="9" r="2.2" fill="#0E9F6E" />
               </svg>
-              NX Growth Partners
+              Nx Growth Partners
             </div>
             <p className="mt-4 max-w-[32ch] text-[0.95rem] leading-relaxed text-ink-soft">
               {footer.blurb}
@@ -45,7 +45,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-[0.86rem] font-600 text-ink-faint sm:flex-row sm:items-center">
           <span>{footer.copyright}</span>
-          <span>Built by the studio, on the studio.</span>
+          <span>Embedded. Senior. Accountable.</span>
         </div>
       </div>
     </footer>

@@ -2,17 +2,17 @@ import { useEffect } from 'react'
 import { useSmoothScroll } from './lib/useSmoothScroll'
 import { ScrollTrigger } from './lib/gsap'
 import { TonalBackground } from './components/TonalBackground'
-import { CustomCursor } from './components/CustomCursor'
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Proof } from './components/Proof'
-import { StudioModel } from './components/StudioModel'
-import { HowItWorks } from './components/HowItWorks'
-import { Engineering } from './components/Engineering'
-import { Portfolio } from './components/Portfolio'
+import { OperatingModel } from './components/OperatingModel'
+import { Services } from './components/Services'
+import { Embedded } from './components/Embedded'
+import { Industries } from './components/Industries'
+import { Work } from './components/Work'
 import { Stats } from './components/Stats'
 import { Quote } from './components/Quote'
-import { Approach } from './components/Approach'
+import { About } from './components/About'
 import { CTA } from './components/CTA'
 import { Footer } from './components/Footer'
 
@@ -34,18 +34,18 @@ export default function App() {
   return (
     <>
       <TonalBackground />
-      <CustomCursor />
       <Nav />
       <main>
         <Hero />
         <Proof />
-        <StudioModel />
-        <HowItWorks />
-        <Engineering />
-        <Portfolio />
+        <OperatingModel />
+        <Services />
+        <Embedded />
+        <Industries />
+        <Work />
         <Stats />
         <Quote />
-        <Approach />
+        <About />
         <CTA />
       </main>
       <Footer />

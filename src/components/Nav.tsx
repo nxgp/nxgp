@@ -52,9 +52,6 @@ export function Nav() {
         </div>
 
         <div className="hidden items-center gap-2.5 md:flex">
-          <Button variant="ghost" magnetic={false} className="px-4">
-            {nav.portal}
-          </Button>
           <Button variant="dark" onClick={() => scrollToId('cta')}>
             {nav.cta}
           </Button>
